@@ -1,0 +1,114 @@
+/* CSS Reset  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 11px;
+}
+
+.hero-section{
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.background{
+    transform: translateZ(-40px) scale(6);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1{
+    font-family: system-ui;
+    /* font-weight: 900; */
+    font-size: 10rem;
+    position: absolute;
+    top: 5rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateZ(-50%);
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0; 
+}
+
+h2{
+    font-family: system-ui;
+    font-size: 5rem;
+    padding: 0 1em;
+    /* position: absolute; */
+}
+
+h3{
+    font-size: 1.5rem;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    padding: 0 5rem;
+    margin: 3rem 0;
+    font-family: sans-serif;
+  }
+
+.bg{
+    width: 100%;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#last-para{
+    margin-bottom: -1rem;
+}
+
+.bg-1{
+    background-image: url('/img/biking.jpg');
+}
+
+.bg-2{
+    background-image: url('/img/para.jpg');
+}
+
+.bg-3{
+    background-image: url('/img/surfing-.jpg');
+}
+
+/* Footer */
+.footer{
+    
+    text-align: center;
+    padding: .5rem;
+}
